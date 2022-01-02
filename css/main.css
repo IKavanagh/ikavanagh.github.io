@@ -1,0 +1,290 @@
+body {
+    font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+    color: #868e96;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 0;
+        padding-left: 17rem;
+    }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-family: Saira Extra Condensed, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+    color: #343a40;
+    text-transform: uppercase;
+}
+
+h1, .h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-left: -3px; /* Correct left align when font-size is increased */
+}
+
+h2, .h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-left: -1px; /* Correct left align when font-size is increased */
+}
+
+h3, .h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.subheading {
+    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    color: #868e96;
+}
+
+p.lead {
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+/* Menu */
+.menu h2 {
+    border-bottom: solid 2px rgba(255, 255, 255, 0.25);
+
+    font-family: Raleway, Helvetica, sans-serif;
+    letter-spacing: 0.1em;
+}
+
+.menu .navbar-nav .nav-item .nav-link {
+    display: block;
+
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+
+    padding: 0.75rem 0;
+}
+
+@media (max-width: 992px) {
+    .menu {
+        pointer-events: none;
+
+        -moz-transition: opacity 0.35s ease, visibility 0.35s;
+        -webkit-transition: opacity 0.35s ease, visibility 0.35s;
+        -ms-transition: opacity 0.35s ease, visibility 0.35s;
+        transition: opacity 0.35s ease, visibility 0.35s;
+
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+        background: rgba(0, 0, 0, 0.7);
+
+        cursor: default;
+
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+
+        text-align: center;
+
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .menu .inner {
+        -moz-transform: translateY(0.5em);
+        -webkit-transform: translateY(0.5em);
+        -ms-transform: translateY(0.5em);
+        transform: translateY(0.5em);
+
+        -moz-transition: opacity 0.35s ease, -moz-transform 0.35s ease;
+        -webkit-transition: opacity 0.35s ease, -webkit-transform 0.35s ease;
+        -ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
+        transition: opacity 0.35s ease, transform 0.35s ease;
+
+        -webkit-overflow-scrolling: touch;
+
+        display: block;
+        position: relative;
+        padding: 2.5em 1.5em 0.5em 1.5em;
+
+        max-width: 100%;
+        width: 20rem;
+
+        opacity: 0;
+    }
+
+    .menu .close {
+        background-image: url("images/close.svg");
+        background-position: 75% 25%;
+        background-repeat: no-repeat;
+        background-size: 1.5em 1.5em;
+        border: 0;
+
+        content: '';
+
+        display: block;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        height: 4em;
+        width: 4em;
+
+        text-align: center;
+        text-indent: 4em;
+
+        overflow: hidden;
+    }
+
+    .menu .navbar-nav .nav-item .nav-link {
+        border-radius: 5px;
+        border: 0;
+    }
+
+    .menu .navbar-nav .nav-item .nav-link:hover {
+        background: #0074f2; /* bg-primary 5% darker */
+        text-decoration: none;
+    }
+
+    body.is-menu-visible .container-fluid {
+        -moz-filter: blur(1px);
+        -webkit-filter: blur(1px);
+        -ms-filter: blur(1px);
+        filter: blur(1px);
+    }
+
+    body.is-menu-visible .menu {
+        pointer-events: auto;
+
+        opacity: 1;
+        visibility: visible;
+    }
+
+    body.is-menu-visible .menu .inner {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 992px) {
+    #nav {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 17rem;
+        height: 100vh;
+    }
+
+    #nav .navbar-brand {
+        display: flex;
+        margin: auto auto 0;
+        padding: 0.5rem;
+    }
+
+    #nav .navbar-brand .img-profile {
+        max-width: 10rem;
+        max-height: 10rem;
+        border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    }
+
+    .menu {
+        display: flex;
+        align-items: flex-start;
+        flex-grow: 0;
+
+        width: 100%;
+
+        margin-bottom: auto;
+    }
+
+    .menu h2,
+    .menu .close {
+        display: none;
+    }
+
+    .menu .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu .navbar-nav .nav-item {
+        display: block;
+    }
+}
+
+/* Content */
+@media (max-width: 992px) {
+    section:first-child {
+        min-height: calc(100vh - 56px);
+        margin-top: 56px;
+    }
+}
+
+section {
+    min-height: 100vh;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (min-width: 992px) {
+    section {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+/* Icons */
+.item .fa-ul {
+    margin-left: 1.5em;
+}
+
+.social-icons a {
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+
+    margin-right: 2rem;
+
+    background-color: #495057;
+    color: #ffffff !important;
+
+    border-radius: 100%;
+
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+}
+
+.social-icons a:hover {
+    background-color: #007bff;
+}
+
+.dev-icons i {
+    color: #495057;
+    font-size: 3rem;
+
+    margin-right: 2rem;
+}
+
+.dev-icons i:hover {
+    color: #007bff;
+}

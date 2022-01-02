@@ -1,61 +1,341 @@
-<!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Ian Kavanagh</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-loading">
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Ian Kavanagh">
+    <meta name="author" content="Ian Kavanagh">
 
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<span class="avatar"><img src="images/avatar.jpg" width="122" height="122" alt="" /></span>
-							<h1>Ian Kavanagh, PhD</h1>
-							<p>Software Developer</p>
-						</header>
-						<footer>
-							<ul class="icons">
-								<li><a href="https://www.linkedin.com/in/kavanaghian" class="fa-linkedin">LinkedIn</a></li>
-								<li><a href="https://github.com/IKavanagh" class="fa-github">Github</a></li>
-								<li><a href="https://stackoverflow.com/users/1552737/IKavanagh" class="fa-stack-overflow">StackOverflow</a></li>
-								<li><a href="mailto:&#107;&#097;&#118;&#097;&#110;&#097;&#103;&#104;&#046;&#105;&#097;&#110;&#052;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" class="fa-envelope-o">Email</a></li>
-							</ul>
-						</footer>
-					</section>
+    <title>Ian Kavanagh</title>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Ian Kavanagh</li>
-							<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-							<li>Image: <a href="https://unsplash.com">Unsplash</a></li>
-						</ul>
-					</footer>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-			</div>
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css">
 
-		<!-- Scripts -->
-			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
 
-	</body>
+    <link rel="stylesheet" href="css/main.css" />
+
+</head>
+<body id="top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="nav">
+        <a class="navbar-brand js-scroll-trigger" id="brand" href="#top">
+            <span class="d-block d-lg-none">Ian Kavanagh</span>
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="Ian Kavanagh" /></span>
+        </a>
+        <button class="navbar-toggler" type="button" aria-controls="menu" aria-expanded="false" aria-label="Toggle menu">
+            <a class="js-scroll-trigger" href="#menu">
+                <span class="navbar-toggler-icon" />
+            </a>
+        </button>
+
+        <div id="menu" class="menu d-flex align-items-center justify-content-center">
+            <div class="inner bg-primary rounded">
+                <h2 class="h4 text-white font-weight-bold pb-3">Menu</h2>
+                <ul class="navbar-nav mb-4">
+                    <li class="nav-item">
+                      <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+                    </li>
+                </ul>
+                <a href="#" class="close">Close</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+        <section class="page d-flex flex-column justify-content-center" id="about">
+            <h1>Ian Kavanagh</h1>
+            <p class="h4 subheading mb-5">
+                PhD | Dublin, Ireland | <a href="mailto:&#105;&#097;&#110;&#107;&#097;&#118;&#097;&#110;&#097;&#103;&#104;&#105;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">IanKavanaghIE@gmail.com</a>
+            </p>
+            <p class="lead mb-5">
+              I am an ambitious, high achieving senior software engineer and PhD graduate looking to take my career to the next level. I'm a problem solver always looking to improve processes and develop useful features with a proven track record for implementing changes. I have strong technical skills as well as excellent interpersonal and management skills which has provided improvements in employee retention and satisfaction.
+            </p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/IKavanagh">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/IKavanagh">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://stackoverflow.com/users/1552737/IKavanagh">
+                    <i class="fab fa-stack-overflow"></i>
+                </a>
+            </div>
+        </section>
+
+        <hr class="m-0" />
+
+        <section class="page d-flex flex-column justify-content-center" id="experience">
+            <h2 class="mb-5">Experience</h2>
+            <div class="item mb-5">
+                <h3 class="mb-3">Senior Software Engineer</h3>
+                <div class="d-flex justify-content-between align-items-baseline mb-3">
+                    <h4 class="subheading">Azyra Systems</h4>
+                    <p class="h5 text-primary">2018 - Present</p>
+                </div>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <i class="fa-li fa fa-minus"></i>
+                        Oversaw and produced modern website for the first time in 20 years
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-minus"></i>
+                        Designed and developed implementation of HMRC Making Tax Digital for VAT (MTDfV) in C#/X#/SQL which received first time approval and praise for ease of use and closeness to HMRC guidelines
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-minus"></i>
+                        Increased development team size by 75% and improved retention rate of developers to 100%
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-minus"></i>
+                        Implemented new Git workflow, trained new and old developers and developed scripts to improve efficiency and reduce the time to release
+                    </li>
+                </ul>
+            </div>
+            <div class="item mb-5">
+                <h3 class="mb-3">Consultant Web Developer</h3>
+                <div class="d-flex justify-content-between align-items-baseline mb-3">
+                    <h4 class="subheading">W39 Services</h4>
+                    <p class="h5 text-primary">2011 - 2018</p>
+                </div>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <i class="fa-li fa fa-minus"></i>
+                        Consulted on IT issues and solutions including website and business processes to improve the efficiency of management and employees
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-minus"></i>
+                        Managed company website on an ongoing basis including further development through HTML5 and CSS3
+                    </li>
+                </ul>
+            </div>
+            <div class="item mb-5">
+                <h3 class="mb-3">Consultant Electronic Engineer</h3>
+                <div class="d-flex justify-content-between align-items-baseline mb-3">
+                    <h4 class="subheading">BlueBridge Technologies</h4>
+                    <p class="h5 text-primary">2014 - 2015</p>
+                </div>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <i class="fa-li fa fa-minus"></i>
+                        Produced feasibility studies on viable technologies for new prototypes
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-minus"></i>
+                        Developed an embedded system and IoT prototypes for client proposals
+                    </li>
+                </ul>
+            </div>
+            <div class="item">
+                <h3 class="mb-3">Software Engineer</h3>
+                <div class="d-flex justify-content-between align-items-baseline mb-3">
+                    <h4 class="subheading">Electric Ireland</h4>
+                    <p class="h5 text-primary">2012</p>
+                </div>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <i class="fa-li fa fa-minus"></i>
+                        Enhanced debtors reporting efficiency by 90% with custom VBA tool developed under my own initiative in consultation with relevant team
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-minus"></i>
+                        Built a graphing and monitoring tool to manage complaint resolutions
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <hr class="m-0" />
+
+        <section class="page d-flex flex-column justify-content-center" id="education">
+            <h2 class="mb-5">Education</h2>
+            <div class="item mb-5">
+                <h3 class="mb-3">PhD in, Electronic Engineering</h3>
+                <div class="d-flex justify-content-between align-items-baseline mb-3">
+                    <h4 class="subheading">Dublin City University</h4>
+                    <p class="h5 text-primary">2014 - 2018</p>
+                </div>
+                <p>
+                    Thesis: Accurate and efficient full-wave modelling for indoor radio wave propagation
+                </p>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <i class="fa-li fa fa-minus"></i>
+                        Awarded fully funded 48 month GOI Postgraduate Scholarship
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-minus"></i>
+                        1st place in 2 best student paper awards
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-minus"></i>
+                        <span>2nd place in IEEE student paper contest for EMEA</span>
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-minus"></i>
+                        Published 2 journal papers and 12 conference papers
+                    </li>
+                </ul>
+            </div>
+            <div class="item">
+                <h3 class="mb-3">B.Eng in, Electronic Engineering</h3>
+                <div class="d-flex justify-content-between align-items-baseline mb-3">
+                    <h4 class="subheading">Dublin City University</h4>
+                    <p class="h5 text-primary">2010 - 2014</p>
+                </div>
+
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <i class="fa-li fa fa-minus"></i>
+                        1st in class with 1.1, First Class Honours
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <hr class="m-0" />
+
+        <section class="page d-flex flex-column justify-content-center" id="skills">
+            <h2 class="mb-5">Skills</h2>
+            <div class="item">
+                <h3 class="mb-3">Programming Languages and Tools</h3>
+                <h4 class="subheading">Currently use</h4>
+                <ul class="list-inline">
+                    <li class="list-inline-item">C#</li>
+                    <li class="list-inline-item">X#</li>
+                    <li class="list-inline-item">.NET</li>
+                    <li class="list-inline-item">SQL</li>
+                    <li class="list-inline-item">HTML5</li>
+                    <li class="list-inline-item">CSS3</li>
+                    <li class="list-inline-item">Bootstrap</li>
+                    <li class="list-inline-item">Git</li>
+                    <li class="list-inline-item">PowerShell</li>
+                    <li class="list-inline-item">Azure</li>
+                </ul>
+
+                <h4 class="subheading">Previously used</h4>
+                <ul class="list-inline">
+                    <li class="list-inline-item">C</li>
+                    <li class="list-inline-item">C++</li>
+                    <li class="list-inline-item">MATLAB</li>
+                    <li class="list-inline-item">Java</li>
+                    <li class="list-inline-item">JavaScript</li>
+                    <li class="list-inline-item">PHP</li>
+                    <li class="list-inline-item">Bash</li>
+                    <li class="list-inline-item">LaTeX</li>
+                    <li class="list-inline-item">OpenMP</li>
+                    <li class="list-inline-item">MPI</li>
+                </ul>
+
+                <h3 class="mb-4">This website is built with</h3>
+                <div class="dev-icons">
+                    <i class="devicon-html5-plain"></i>
+                    <i class="devicon-css3-plain"></i>
+                    <i class="devicon-bootstrap-plain"></i>
+                    <i class="devicon-javascript-plain"></i>
+                </div>
+            </div>
+        </section>
+
+        <hr class="m-0" />
+
+        <section class="page d-flex flex-column justify-content-center" id="interests">
+            <h2 class="mb-5">Interests</h2>
+            <div class="item">
+                <p>
+                  When I'm not working or learning new things I can usually be found with my 10 year old puppy like Labrador Toby. At the weekends, I'm either refereeing or travelling to a GAA match. I also like building Lego Star Wars spaceships.
+                </p>
+            </div>
+        </section>
+
+        <hr class="m-0" />
+
+        <section class="page d-flex flex-column justify-content-center" id="publications">
+            <h2 class="mb-5">Publications</h2>
+            <div class="item">
+                <h3>Journal Papers</h3>
+                <div class="list-group mb-3">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="d-none d-lg-inline">I. Kavanagh and C. Brennan, “</span>Validation of a volume integral equation method for indoor propagation modelling<span class="d-none d-lg-inline">,” IET Microwaves, Antennas & Propagation, vol. 13, pp. 705–713, May 2019.
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="d-none d-lg-inline">I. Kavanagh and C. Brennan, “</span>Full wave indoor propagation modelling using the volume integral equation<span class="d-none d-lg-inline">,” Progress In Electromagnetics Research B, vol. 84, pp. 171–187, July 2019.</span>
+                    </a>
+                </div>
+                <h3>Conference Papers</h3>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="d-none d-lg-inline">I. Kavanagh, S. Hussain, and C. Brennan, “</span>A full wave propagation model for indoor wireless communications<span class="d-none d-lg-inline">,” in The 17th Research Colloquium on Communications and Radio Science into the 21st Century, pp. 1–4, 2014.</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="d-none d-lg-inline">V. Pham-Xuan, I. Kavanagh, M. Condon, and C. Brennan, “</span>On comparison of integral equation approaches for indoor wave propagation<span class="d-none d-lg-inline">,” in 2014 IEEE-APS Topical Conference on Antennas and Prop- agation in Wireless Communications (APWC), pp. 796–799, 2014.</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="d-none d-lg-inline">I. Kavanagh, V. Pham-Xuan, M. Condon, and C. Brennan, “</span>A method of moments based indoor propagation model<span class="d-none d-lg-inline">,” in 2015 9th European Conference on Antennas and Propagation (EuCAP), pp. 1– 5, 2015.</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="d-none d-lg-inline">I. Kavanagh and C. Brennan, “</span>Computationally efficient extension of a 2d integral equation propagation model to 3d<span class="d-none d-lg-inline">,” in 2015 International Conference on Electromagnetics in Advanced Applications (ICEAA), pp. 187–190, 2015.</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="d-none d-lg-inline">I. Kavanagh, “</span>Developing a method of moments based indoor propagation model<span class="d-none d-lg-inline">,” in IEEE EUROCON 2015 - International Conference on Computer as a Tool (EUROCON), pp. 1–6, 2015.</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="d-none d-lg-inline">I. Kavanagh and C. Brennan, “</span>Preliminary comparison of 3d integral equation based indoor propagation model and ray tracing<span class="d-none d-lg-inline">,” in 2015 International Conference on Advanced Technologies for Communications (ATC), pp. 350–354, 2015.</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="d-none d-lg-inline">I. Kavanagh and C. Brennan, “</span>A hybrid 2d to 3d full wave indoor propagation model<span class="d-none d-lg-inline">,” in 2016 International Conference on Electromagnetics in Advanced Applications (ICEAA), pp. 748–751, 2016.</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="d-none d-lg-inline">I. Kavanagh, S. Hussain, and C. Brennan, “</span>Comparison of 3d volume integral equation and ray tracing for indoor propagation modelling<span class="d-none d-lg-inline">,” in 2016 10th European Conference on Antennas and Propagation (EuCAP), pp. 1–4, 2016.</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="d-none d-lg-inline">I. Kavanagh and C. Brennan, “</span>Analysis of full wave 2d to 3d propagation models and ray tracing for indoor environments<span class="d-none d-lg-inline">,” in Communications and Radio Science for a Smarter World, Royal Irish Academy Research Colloquium, pp. 53–56, 2017.</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="d-none d-lg-inline">I. Kavanagh and C. Brennan, “</span>Preliminary investigation of power delay profile computation from full wave frequency domain indoor propagation model<span class="d-none d-lg-inline">,” in 2017 11th European Conference on Antennas and Propagation (EUCAP), pp. 2242–2245, 2017.</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="d-none d-lg-inline">I. Kavanagh and C. Brennan, “</span>Validation of a volume integral equation method for indoor propagation modelling<span class="d-none d-lg-inline">,” in Loughborough Antennas Propagation Conference (LAPC 2017), pp. 1–5, 2017.</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="d-none d-lg-inline">I. Kavanagh and C. Brennan, “</span>Volume integral equation based modelling of in building propagation<span class="d-none d-lg-inline">,” in 2017 International Conference on Electromagnetics in Advanced Applications (ICEAA), pp. 1498–1501, 2017.</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="m-0" />
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="vendor/jquery-easing-1.4.1/jquery.easing.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
 </html>
