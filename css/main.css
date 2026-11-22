@@ -277,14 +277,3 @@ section {
 .social-icons a:hover {
     background-color: #007bff;
 }
-
-.dev-icons i {
-    color: #495057;
-    font-size: 3rem;
-
-    margin-right: 2rem;
-}
-
-.dev-icons i:hover {
-    color: #007bff;
-}
